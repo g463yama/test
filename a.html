@@ -5,8 +5,9 @@
 <script type="text/javascript">
 function sum()
 {
-    var a = form.a.value;
-    var b = form.b.value;
+    var form = document.forms['form'];
+    var a = parseFloat(form.a.value);
+    var b = parseFloat(form.b.value);
     form.c.value = a + b;
 }
 </script>
